@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 
+/**
+ * Functional component that displays a countdown timer.
+ * @returns {JSX.Element}
+ */
 export function CountdownTimer() {
   const [timeRemaining, setTimeRemaining] = useState(10);
 
