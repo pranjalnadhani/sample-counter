@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { CounterClass } from "./CounterClass";
-import { CounterFunction } from "./CounterFunction";
+import { CounterClass } from "./components/Counter/CounterClass";
+import { CounterFunction } from "./components/Counter/CounterFunction";
 import { PostDetails } from "./PostDetails";
 import { Provider } from "react-redux";
 import { PostsProvider } from "./PostsContext";
@@ -18,7 +18,7 @@ function App() {
             <Route path="/" element={<TodoList />} />
             <Route path="/posts" element={<PostsList />} />
             <Route path="/posts/:postId" element={<PostDetails />} />
-            <Route path="/timer" lazy={() => import("./CountdownTimer")} />
+            <Route path="/timer" lazy={() => import("./components/CountdownTimer/CountdownTimer")} />
             <Route
               path="/counter-function"
               element={
